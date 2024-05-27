@@ -1,0 +1,51 @@
+/* pc버전 */
+header {
+    width: 100%; height: 100px;
+    padding: 0.5rem 1rem; box-sizing: border-box;
+    display: flex; justify-content: space-between;
+    position: fixed; z-index: 99999;
+}
+
+/* 메인 로고 이미지 크기 맞추기 */
+.logo img {
+    width: 170px;
+    object-fit: contain;
+}
+
+/* 메뉴 전체 (내부 링크 + 외부 링크) */
+.PCMenu {
+    display: flex;
+}
+
+/* 내부 링크 메뉴 */
+.inMenu {
+    height: 100%;
+    display: flex;
+    justify-content: space-around; align-items: center;
+}
+
+.inMenu .topMenu {
+    margin-right: 1.2rem;
+    color: #B3A97F;
+    font-size: 1.4rem;
+}
+
+/* 오른쪽 끝 아이콘 세 개 */
+.outMenu {
+    width: calc(24*3 + 2rem);
+    display: flex; justify-content: space-around;
+}
+
+.iconMenu {
+    width: 24px;
+}
+
+.iconMenu:not(:last-child) {
+    margin-right: 1rem;
+}
+
+/* 헤더 배경색 지정 클래스 */
+.white {
+    background-color: #fff;
+}
+

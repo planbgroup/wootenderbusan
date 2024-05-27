@@ -1,0 +1,9 @@
+main {
+    width: 100%;
+}
+
+.slideBanner {
+    background: url(../img/main_slide01.png) no-repeat;
+    background-size: cover;
+    width: 100%; height: 1000px;
+}
