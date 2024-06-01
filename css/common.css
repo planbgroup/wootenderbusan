@@ -1,5 +1,60 @@
 /* 폰트 */
+
+/* 프리텐다드 */
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css");
+
+/* 한자 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap');
+
+/* 고운바탕 */
+@font-face {
+    font-family: 'GowunBatang-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* against */
+@font-face {
+    font-family: 'against';
+    src: url(../font/against-regular.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+/* Leky-Calgria */
+@font-face {
+    font-family: 'Leky';
+    src: url(../font/Leky-Calgria.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 폰트 클래스 */
+.fontGowun {
+    font-family: 'GowunBatang-Regular';
+}
+
+.fontAgainst {
+    font-family: 'against';
+}
+
+.fontLeky {
+    font-family: 'Leky';
+}
+
+.fontChinese {
+    font-family: "LXGW WenKai TC", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* 폰트 색상 */
+.gold {
+    color: #B3A97F;
+}
+
+.deepgreen {
+    color: #254635;
+}
 
 /* 공통속성 초기화 */
 * {

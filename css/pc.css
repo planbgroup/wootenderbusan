@@ -2,16 +2,51 @@ main {
     width: 100%;
 }
 
-/* 메인_슬라이드 배너 시작 */
+/* 메인_슬라이드 배너 시작====================================================== */
 .slideBanner {
-    width: 100%; height: 1000px;
+    width: 100%;
+    position: relative;
 }
 
-.slideBanner .swiper-slide:nth-child(1) {
-    background: url(../img/main_slide01.png) no-repeat;
-    background-size: cover;
+.titleWrap {
+    position: absolute; z-index: 3;
+    top: calc(50% - 3rem);
+    left: calc(50% - 9.5rem);
+    color: #fff;
+    text-align: center;
+}
+.mainTitle {
+    font-size: 3rem;
+}
+
+
+.mainSlide {
+    width: 100%;
+}
+
+/* 이미지 크기에 높이 맞추기 */
+.swiper-slide {
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    object-fit: contain;
+    height: 100%;
 }
 
 .swiper {
     width: 100%; height: 100%;
 }
+/* 메인_슬라이드 배너 끝 ========================================== */
+
+/* 브랜딩 문구 섹션 시작 =========================================== */
+.branding {
+    display: flex;
+}
+
+.branding>.imgBox>img {
+    width: 415px; height: 425px;
+    object-fit: contain;
+}
+
+/* 브랜딩 문구 섹션 끝 =========================================== */
