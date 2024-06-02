@@ -1,5 +1,11 @@
+/* 공통 영역 */
 main {
     width: 100%;
+}
+
+.secPadding {
+    padding-inline: 6.6rem;
+    box-sizing: border-box;
 }
 
 /* 메인_슬라이드 배너 시작====================================================== */
@@ -42,11 +48,34 @@ main {
 /* 브랜딩 문구 섹션 시작 =========================================== */
 .branding {
     display: flex;
+    justify-content: center; align-items: center;
+    margin: 6rem 0;
+}
+
+.sectitle:nth-child(2) {
+    margin: 0 0 2rem 1rem;
+}
+
+.imgBox {
+    width: 700px;
+    height: 650px;
+    position: relative;
+    margin-left: 2rem;
 }
 
 .branding>.imgBox>img {
-    width: 415px; height: 425px;
-    object-fit: contain;
+    width: 400px; height: 400px;
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    position: absolute;
+}
+
+.brandImg01 {
+    top: 0; left: 0;
+}
+
+.brandImg02 {
+    bottom: 0; right: 0;
 }
 
 /* 브랜딩 문구 섹션 끝 =========================================== */
