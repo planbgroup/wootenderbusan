@@ -10,7 +10,7 @@ class HeaderComponent {
         <header class="${this.backgroundColor}">
           <h1 class="logo">
             <a href="#">
-              <img src="./img/_logo.png" alt="우텐더 해운대">
+              <img src="../img/_logo.png" alt="우텐더 해운대">
             </a>
           </h1>
           <nav class="PCMenu">

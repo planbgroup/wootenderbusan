@@ -209,3 +209,69 @@ main {
     color: #fff;
 }
 /* 룸 프리뷰 섹션 끝 ============================================= */
+
+/* 이벤트 프리뷰 섹션 시작 ======================================== */
+.eventPreview {
+    margin-top: 4rem;
+    text-align: right;
+}
+
+.eventPreview .mainText {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+mark {
+    background-color: #F9EEA3;
+}
+
+.imgGrid {
+    width: 100%;
+    display: flex;
+    justify-content: center; align-items: center;
+    margin-top: 2rem;
+}
+
+.imgBox {
+    width: 400px; height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.reservationIcon {
+    display: inline-block;
+    width: 20px; height: 20px;
+    background: url(../img/fi-rs-calendar.svg) no-repeat 50% 50%;
+    background-size: contain;
+    margin-right: 0.5rem;
+}
+
+.shortcutBtn {
+    width: 100%;
+    position: absolute;
+    bottom: -5rem;
+    color: #fff;
+    background: rgba(255,255,255,0.19);
+    backdrop-filter: blur(15px);
+    padding: 1.5rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+/* 이미지 hover했을 때 => shortcutBtn 올라오기 */
+.imgBox img {
+    transition: all .4s;
+}
+
+.imgBox:hover img {
+    scale: 1.2;
+}
+
+.imgBox:hover .shortcutBtn {
+    bottom: 0;
+}
+
