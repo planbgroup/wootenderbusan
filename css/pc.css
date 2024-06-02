@@ -8,6 +8,11 @@ main {
     box-sizing: border-box;
 }
 
+
+.title {
+    font-size: 2rem;
+}
+
 /* 메인_슬라이드 배너 시작====================================================== */
 .slideBanner {
     width: 100%;
@@ -79,3 +84,128 @@ main {
 }
 
 /* 브랜딩 문구 섹션 끝 =========================================== */
+
+/* 우텐더 메뉴 섹션 시작 ========================================= */
+.wootenderMenu {
+
+}
+
+.wootenderMenu .title {
+    margin: 0.5rem 0 2rem 0;
+    font-size: 2rem;
+}
+
+.wootenderMenu .fontAgainst {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* 대표 메뉴 카드 */
+.cards {
+    width: 100%;
+    display: flex;
+    justify-content: center; align-items: center;
+    margin-bottom: 6rem;
+}
+
+.card {
+    transition: margin .4s;
+    width: calc(1200px / 3); height: 570px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 10px;
+    color: #fff;
+    padding: 1.2rem; box-sizing: border-box;
+    position: relative;
+}
+
+.card:hover {
+    margin-bottom: 1rem;
+}
+
+.card:nth-child(1) {
+    background: url(../img/sirlion_bulgogi.png) no-repeat;
+    background-size: cover;
+}
+
+.card:nth-child(2) {
+    background: url(../img/korean_beef.png) no-repeat;
+    background-size: cover;
+}
+
+.card:nth-child(3) {
+    background: url(../img/ramen.png) no-repeat;
+    background-size: cover;
+}
+
+.card:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.menuShortcut {
+    width: fit-content;
+    padding: 1rem 2rem; box-sizing: border-box;
+    background: rgba(255,255,255,0.19);
+    backdrop-filter: blur(15px);
+    border-top-left-radius: 30px;
+    position: absolute;
+    bottom: 0; right: 0;
+}
+
+.menuShortcut:hover .shortcutIcon {
+    margin-left: 1rem;
+}
+
+.menuCate {
+    font-size: 1.5rem;
+}
+
+.shortcutIcon {
+    transition: margin .4s;
+    margin-left: 0.5rem;
+    display: inline-block;
+    width: 10px; height: 20px;
+    background : url(../img/shortcut_icon.svg)
+}
+
+/* 우텐더 메뉴 섹션 끝 ========================================= */
+
+/* 룸 프리뷰 섹션 ============================================= */
+.preview .title {
+    padding-left: 6.6rem;
+    margin-bottom: 2rem;
+}
+
+.previewSwiper .swiper-slide{
+    width: 1000px; height: 620px;
+    border-radius: 30px;
+    padding: 1.5rem; box-sizing: border-box;
+}
+
+.previewSwiper .swiper-slide:nth-child(1) {
+    background: url(../img/roomPreview01.png) no-repeat;
+    background-size: cover;
+}
+
+.previewSwiper .swiper-slide:nth-child(2) {
+    background: url(../img/roomPreview02.png) no-repeat;
+    background-size: cover;
+}
+
+.previewSwiper .swiper-slide:nth-child(3) {
+    background: url(../img/roomPreview03.png) no-repeat;
+    background-size: cover;
+}
+
+.centerText {
+    position: absolute;
+    top: calc(50% - 2rem);
+    left: calc(50% - 10rem);
+    text-align: center;
+    color: #fff;
+}
+
+.menuShortcut {
+    color: #fff;
+}
+/* 룸 프리뷰 섹션 끝 ============================================= */
