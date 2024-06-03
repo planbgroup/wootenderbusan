@@ -34,12 +34,13 @@ header {
 
 /* 오른쪽 끝 아이콘 세 개 */
 .outMenu {
-    width: calc(24*3 + 2rem);
-    display: flex; justify-content: space-around;
+    width: calc(24*3 + 4rem);
+    display: flex;
+    justify-content: space-around; align-items: center;
 }
 
 .iconMenu {
-    width: 24px;
+    width: 24px; height: 24px;
 }
 
 .iconMenu:not(:last-child) {

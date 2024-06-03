@@ -13,11 +13,6 @@ const mainSlide = new Swiper('.mainSlide', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
 
     // 자동재생
     autoplay: {
@@ -38,11 +33,6 @@ const mainSlide = new Swiper('.mainSlide', {
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
     },
 
     // 자동재생

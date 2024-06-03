@@ -1,3 +1,7 @@
+html,body {
+    font-size: 20px;
+}
+
 /* 공통 영역 */
 main {
     width: 100%;
@@ -61,7 +65,7 @@ main {
     margin: 0 0 2rem 1rem;
 }
 
-.imgBox {
+.branding .imgBox {
     width: 700px;
     height: 650px;
     position: relative;
@@ -110,17 +114,17 @@ main {
 }
 
 .card {
-    transition: margin .4s;
+    transition: all .4s;
     width: calc(1200px / 3); height: 570px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border-radius: 10px;
     color: #fff;
-    padding: 1.2rem; box-sizing: border-box;
     position: relative;
+    padding: 1.2rem; box-sizing: border-box;
 }
 
 .card:hover {
-    margin-bottom: 1rem;
+    transform: translateY(-20px);
 }
 
 .card:nth-child(1) {
@@ -150,6 +154,7 @@ main {
     border-top-left-radius: 30px;
     position: absolute;
     bottom: 0; right: 0;
+    cursor: pointer;
 }
 
 .menuShortcut:hover .shortcutIcon {
@@ -157,7 +162,7 @@ main {
 }
 
 .menuCate {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .shortcutIcon {
@@ -194,6 +199,21 @@ main {
 
 .previewSwiper .swiper-slide:nth-child(3) {
     background: url(../img/roomPreview03.png) no-repeat;
+    background-size: cover;
+}
+
+.previewSwiper .swiper-slide:nth-child(4) {
+    background: url(../img/roomPreview01.png) no-repeat;
+    background-size: cover;
+}
+
+.previewSwiper .swiper-slide:nth-child(4) {
+    background: url(../img/roomPreview01.png) no-repeat;
+    background-size: cover;
+}
+
+.previewSwiper .swiper-slide:nth-child(5) {
+    background: url(../img/roomPreview01.png) no-repeat;
     background-size: cover;
 }
 
@@ -238,6 +258,10 @@ mark {
     overflow: hidden;
 }
 
+.imgBox:not(:last-child) {
+    margin-right: 1rem;
+}
+
 .reservationIcon {
     display: inline-block;
     width: 20px; height: 20px;
@@ -260,6 +284,7 @@ mark {
     cursor: pointer;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    transition: all .4s;
 }
 
 /* 이미지 hover했을 때 => shortcutBtn 올라오기 */
@@ -267,11 +292,94 @@ mark {
     transition: all .4s;
 }
 
-.imgBox:hover img {
+.eventPreview .imgBox:hover img {
     scale: 1.2;
 }
 
 .imgBox:hover .shortcutBtn {
     bottom: 0;
 }
+/* 이벤트 프리뷰 섹션 끝 ======================================== */
 
+.contact {
+    position: relative;
+}
+
+.mapInfo {
+    width: 660px; height: 480px;
+    position: absolute;
+    top: calc(50% - (480px/2));
+    right: calc(30% - (660px/2));
+    padding: 1.5rem; box-sizing: border-box;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.19);
+    font-size: 0.95rem;
+}
+
+.closeBtn {
+    display: block;
+    width: 25px; height: 25px;
+    background: url(../img/closeBtn_gold.svg) no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 1.5rem; right: 1.5rem;
+    cursor: pointer;
+}
+
+.info {
+    padding-block: 1rem;
+}
+
+.mapInfo hr {
+    border: 1px solid #B3A97F;
+}
+
+.mapInfo h4 {
+    padding-block: 1rem; box-sizing: border-box;
+}
+
+.reservationBtn {
+    display: inline-block;
+    padding: 0.5rem 1rem; box-sizing: border-box;
+    background-color: #B3A97F;
+    color: #fff;
+    position: absolute;
+    bottom: 2rem; right: 1.5rem;
+}
+
+
+/* 푸터 */
+footer {
+    background-color: #333;
+    padding-block: 1rem;
+    display: flex;
+    justify-content: space-around; align-items: center;
+    font-size: 0.9rem;
+}
+
+.botLogo {
+    display: block;
+}
+
+.bottomLogo {
+    width: 240px;
+
+}
+
+.footText {
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright {
+    color: #635D44;
+}
+
+/* ---- 아이콘 메뉴 + 카피라이트 정렬 잡기---- */
+footer .outMenu {
+    justify-content: right;
+    margin-bottom: 1rem;
+}
+
+footer .outMenu a:not(:last-child) {
+    margin-right: 2rem;
+}
