@@ -262,7 +262,7 @@ mark {
     margin-right: 1rem;
 }
 
-.reservationIcon {
+.imgGrid .reservationIcon {
     display: inline-block;
     width: 20px; height: 20px;
     background: url(../img/fi-rs-calendar.svg) no-repeat 50% 50%;
