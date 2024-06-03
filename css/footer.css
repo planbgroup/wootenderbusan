@@ -1,0 +1,36 @@
+/* 푸터 */
+footer {
+    background-color: #333;
+    padding-block: 1rem;
+    display: flex;
+    justify-content: space-around; align-items: center;
+    font-size: 0.9rem;
+}
+
+.botLogo {
+    display: block;
+}
+
+.bottomLogo {
+    width: 240px;
+
+}
+
+.footText {
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright {
+    color: #635D44;
+}
+
+/* ---- 아이콘 메뉴 + 카피라이트 정렬 잡기---- */
+footer .outMenu {
+    justify-content: right;
+    margin-bottom: 1rem;
+}
+
+footer .outMenu a:not(:last-child) {
+    margin-right: 2rem;
+}
