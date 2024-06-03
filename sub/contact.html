@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우텐더 해운대 | Contact</title>
+    <link href="../css/common.css" type="text/css" rel="stylesheet">
+    <link href="../css/header.css" type="text/css" rel="stylesheet">
+    <link href="../css/footer.css" type="text/css" rel="stylesheet">
+    <link href="../css/contact.css" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="wrap">
+        <!-- 헤더 컴포넌트 가져오기 -->
+        <script type="module">
+            import HeaderComponent from '../js/header.js';
+
+            // 헤더를 삽입할 위치를 지정
+            const main = document.querySelector(`main`);
+
+            // 헤더 생성 후 삽입
+            const headerComponent = new HeaderComponent('white'); // 필요한 색상을 여기에 지정
+            const header = headerComponent.render();
+            main.prepend(header); // 또는 app.append(header);
+        </script>
+        <main>
+            <section class="banner">
+                <div class="titleWrap">
+                    <h2 class="title fontAgainst">Contact</h2>
+                    <h2 class="title fontAgainst">Us</h2>    
+                </div>
+            </section>
+        </main>
+        <script type="module">
+            import FooterComponent from '../js/footer.js';
+
+            document.addEventListener('DOMContentLoaded', () => {
+                // 푸터를 삽입할 위치를 지정
+                const main = document.querySelector('main');
+
+                // 푸터 생성 후 삽입
+                const footerComponent = new FooterComponent();
+                const footer = footerComponent.render();
+                main.append(footer);
+            });
+        </script>
+    </div>
+    
+</body>
+</html>
